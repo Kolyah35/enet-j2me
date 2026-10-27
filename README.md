@@ -23,7 +23,7 @@ c.close();
 # Test
 1. Build enet server
 ```bash
-cd server && gcc echo_server.c -o echo_server -DENET_OLD_API # add -lws2_32 -lwinmm if you are on windows
+cd server && gcc echo_server.c -o echo_server -DENET_OLD_API -Ienet/include # add -lws2_32 -lwinmm if you are on windows
 ./echo_server 7777
 ```
 2. Build j2me client and run it on real phone or on the latest version of [KEmulator](https://github.com/shinovon/KEmulator).
